@@ -3,7 +3,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/widgets/custom_asset_image_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/branch/providers/branch_provider.dart';
 import 'package:flutter_restaurant/features/cart/providers/cart_provider.dart';
 import 'package:flutter_restaurant/features/onboarding/providers/onboarding_provider.dart';

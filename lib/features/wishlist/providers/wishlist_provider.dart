@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/models/api_response_model.dart';
 import 'package:flutter_restaurant/common/models/product_model.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/wishlist/domain/reposotories/wishlist_repo.dart';
 import 'package:flutter_restaurant/helper/api_checker_helper.dart';
 import 'package:flutter_restaurant/main.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
 import 'package:provider/provider.dart';
 import '../../../helper/custom_snackbar_helper.dart';
 

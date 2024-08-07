@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/widgets/custom_alert_dialog_widget.dart';
 import 'package:flutter_restaurant/common/widgets/custom_image_widget.dart';
 import 'package:flutter_restaurant/common/widgets/footer_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/language/providers/localization_provider.dart';
 import 'package:flutter_restaurant/features/menu/domain/models/menu_model.dart';
 import 'package:flutter_restaurant/features/menu/widgets/header_item_details_widget.dart';

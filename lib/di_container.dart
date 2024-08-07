@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_restaurant/common/reposotories/news_letter_repo.dart';
 import 'package:flutter_restaurant/common/reposotories/product_repo.dart';
 import 'package:flutter_restaurant/features/auth/domain/reposotories/auth_repo.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/cart/providers/frequently_bought_provider.dart';
 import 'package:flutter_restaurant/features/checkout/providers/checkout_provider.dart';
 import 'package:flutter_restaurant/features/home/domain/reposotories/banner_repo.dart';
@@ -21,7 +22,6 @@ import 'package:flutter_restaurant/features/profile/domain/reposotories/profile_
 import 'package:flutter_restaurant/features/splash/domain/reposotories/splash_repo.dart';
 import 'package:flutter_restaurant/features/wallet/domain/reposotories/wallet_repo.dart';
 import 'package:flutter_restaurant/features/wishlist/domain/reposotories/wishlist_repo.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
 import 'package:flutter_restaurant/features/home/providers/banner_provider.dart';
 import 'package:flutter_restaurant/features/branch/providers/branch_provider.dart';
 import 'package:flutter_restaurant/features/cart/providers/cart_provider.dart';

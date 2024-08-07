@@ -12,7 +12,7 @@ import 'package:flutter_restaurant/common/widgets/footer_widget.dart';
 import 'package:flutter_restaurant/common/widgets/sliver_delegate_widget.dart';
 import 'package:flutter_restaurant/common/widgets/web_app_bar_widget.dart';
 import 'package:flutter_restaurant/features/address/providers/location_provider.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/branch/providers/branch_provider.dart';
 import 'package:flutter_restaurant/features/cart/providers/cart_provider.dart';
 import 'package:flutter_restaurant/features/cart/providers/frequently_bought_provider.dart';

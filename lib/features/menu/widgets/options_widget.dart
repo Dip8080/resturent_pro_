@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/widgets/custom_alert_dialog_widget.dart';
 import 'package:flutter_restaurant/common/widgets/custom_asset_image_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/menu/widgets/card_button_widget.dart';
 import 'package:flutter_restaurant/features/menu/widgets/portion_widget.dart';
 import 'package:flutter_restaurant/features/scaner/screens/scaner_screen.dart';

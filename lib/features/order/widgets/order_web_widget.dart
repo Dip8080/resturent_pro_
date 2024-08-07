@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/providers/theme_provider.dart';
 import 'package:flutter_restaurant/common/widgets/footer_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/order/providers/order_provider.dart';
 import 'package:flutter_restaurant/features/order/widgets/order_list_web_widget.dart';
 import 'package:flutter_restaurant/helper/responsive_helper.dart';

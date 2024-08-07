@@ -224,7 +224,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 // focusNode: _emailNumberFocus,
                                 focusNode: _nameFocus,
                                 nextFocus: _passwordFocus,
-                                controller: _emailController,
+                                controller: _nameController,
                                 // inputType: TextInputType.phone,
                                 inputType: TextInputType.text,
                               )),
@@ -358,17 +358,21 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ? CustomButtonWidget(
                                     btnTxt: getTranslated('login', context),
                                     onTap: () async {
+                                      print('into the login function');
                                       String name =
                                           _nameController!.text.trim();
                                       String phoneNumber =
                                           _numberController!.text.trim();
-                                      if (phoneNumber.isEmpty) {
-                                        showCustomSnackBarHelper(getTranslated(
-                                            'enter_phone_number', context));
-                                      } else {
-                                        authProvider.firebaseVerifyPhoneNumber(
-                                            phoneNumber);
-                                      }
+                                      // if (phoneNumber.isEmpty) {
+                                      //   showCustomSnackBarHelper('');
+                                      // } else {
+                                      //   authProvider.firebaseVerifyPhoneNumber(
+                                      //       phoneNumber);
+                                      // }
+                                      print(
+                                          'this is phone number - ${phoneNumber}');
+                                      // authProvider.firebaseVerifyPhoneNumber(
+                                      //     phoneNumber);
                                       // loginHandler();
                                       // String email =
                                       //     _emailController!.text.trim();

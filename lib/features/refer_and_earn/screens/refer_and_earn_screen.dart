@@ -8,7 +8,7 @@ import 'package:flutter_restaurant/common/widgets/footer_widget.dart';
 import 'package:flutter_restaurant/common/widgets/no_data_widget.dart';
 import 'package:flutter_restaurant/common/widgets/not_logged_in_widget.dart';
 import 'package:flutter_restaurant/common/widgets/web_app_bar_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/profile/providers/profile_provider.dart';
 import 'package:flutter_restaurant/features/refer_and_earn/widgets/refer_and_earn_web_widget.dart';
 import 'package:flutter_restaurant/features/refer_and_earn/widgets/refer_hint_view.dart';

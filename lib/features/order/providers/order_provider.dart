@@ -3,7 +3,7 @@ import 'package:flutter_restaurant/common/models/api_response_model.dart';
 import 'package:flutter_restaurant/common/models/order_details_model.dart';
 import 'package:flutter_restaurant/common/models/place_order_body.dart';
 import 'package:flutter_restaurant/common/models/response_model.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/order/domain/models/delivery_man_model.dart';
 import 'package:flutter_restaurant/features/order/domain/models/order_model.dart';
 import 'package:flutter_restaurant/features/order/domain/reposotories/order_repo.dart';

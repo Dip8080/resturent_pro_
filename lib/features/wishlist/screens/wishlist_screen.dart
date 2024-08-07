@@ -5,7 +5,7 @@ import 'package:flutter_restaurant/common/widgets/no_data_widget.dart';
 import 'package:flutter_restaurant/common/widgets/not_logged_in_widget.dart';
 import 'package:flutter_restaurant/common/widgets/product_shimmer_widget.dart';
 import 'package:flutter_restaurant/common/widgets/web_app_bar_widget.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/features/home/widgets/product_card_widget.dart';
 import 'package:flutter_restaurant/features/wishlist/providers/wishlist_provider.dart';
 import 'package:flutter_restaurant/helper/responsive_helper.dart';

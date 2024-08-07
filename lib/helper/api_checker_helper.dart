@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_restaurant/common/models/api_response_model.dart';
 import 'package:flutter_restaurant/common/models/error_response_model.dart';
+import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
 import 'package:flutter_restaurant/localization/app_localization.dart';
 import 'package:flutter_restaurant/main.dart';
-import 'package:flutter_restaurant/features/auth/providers/authentication_provider.dart';
 import 'package:flutter_restaurant/helper/router_helper.dart';
 import 'package:flutter_restaurant/helper/custom_snackbar_helper.dart';
 import 'package:provider/provider.dart';
