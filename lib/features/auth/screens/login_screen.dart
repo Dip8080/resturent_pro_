@@ -1,7 +1,5 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_restaurant/common/models/config_model.dart';
 import 'package:flutter_restaurant/features/auth/domain/models/user_log_data.dart';
 import 'package:flutter_restaurant/features/auth/providers/auth_provider.dart';
@@ -15,11 +13,9 @@ import 'package:flutter_restaurant/utill/images.dart';
 import 'package:flutter_restaurant/helper/router_helper.dart';
 import 'package:flutter_restaurant/utill/styles.dart';
 import 'package:flutter_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:flutter_restaurant/helper/custom_snackbar_helper.dart';
 import 'package:flutter_restaurant/common/widgets/custom_text_field_widget.dart';
 import 'package:flutter_restaurant/common/widgets/footer_widget.dart';
 import 'package:flutter_restaurant/common/widgets/web_app_bar_widget.dart';
-import 'package:flutter_restaurant/common/widgets/code_picker_widget.dart';
 import 'package:flutter_restaurant/features/auth/widgets/social_login_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -223,7 +219,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 isShowBorder: true,
                                 // focusNode: _emailNumberFocus,
                                 focusNode: _nameFocus,
-                                nextFocus: _passwordFocus,
+                                nextFocus: _numberFocus,
                                 controller: _nameController,
                                 // inputType: TextInputType.phone,
                                 inputType: TextInputType.text,
@@ -359,18 +355,27 @@ class _LoginScreenState extends State<LoginScreen> {
                                     btnTxt: getTranslated('login', context),
                                     onTap: () async {
                                       print('into the login function');
-                                      String name =
-                                          _nameController!.text.trim();
-                                      String phoneNumber =
-                                          _numberController!.text.trim();
-                                      // if (phoneNumber.isEmpty) {
-                                      //   showCustomSnackBarHelper('');
-                                      // } else {
-                                      //   authProvider.firebaseVerifyPhoneNumber(
-                                      //       phoneNumber);
-                                      // }
-                                      print(
-                                          'this is phone number - ${phoneNumber}');
+                                      String number = "01758907846";
+                                      if (number.isNotEmpty) {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => OtpScreen(
+                                                    PhoneNumber: number)));
+                                      }
+
+                                      // String name =
+                                      //     _nameController!.text.trim();
+                                      // String phoneNumber =
+                                      //     _numberController!.text.trim();
+                                      // // if (phoneNumber.isEmpty) {
+                                      // //   showCustomSnackBarHelper('');
+                                      // // } else {
+                                      // //   authProvider.firebaseVerifyPhoneNumber(
+                                      // //       phoneNumber);
+                                      // // }
+                                      // print(
+                                      //     'this is phone number - ${phoneNumber}');
                                       // authProvider.firebaseVerifyPhoneNumber(
                                       //     phoneNumber);
                                       // loginHandler();
@@ -467,7 +472,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                                   Dimensions.fontSizeSmall,
                                               color: Theme.of(context)
                                                   .hintColor
-                                                  .withOpacity(0.7)),
+                                                  .withOpacity(0.7),),
                                     ),
                                     const SizedBox(
                                         width: Dimensions.paddingSizeSmall),
